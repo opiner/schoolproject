@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student</title>
+<link type="text/css" rel="stylesheet" href="css/student.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+
+</head>
+
+
+
+
+<body>
+   <div id="wrapper">
+      <div id="header">
+         <ul>
+           <li><a href="index.html">Home</a></li>                
+           <li><a href="admissions.html">Admissions</a></li>
+           <li><a href="student.html">Students</a></li>
+           <li><a href="library.html">Library</a></li>
+           <li><a href="news.html">News</a></li>
+           <li><a href="contact.html">Contact us</a></li>
+           </ul>
+           
+     <div id="portal">
+              <h1>Student Zone</h1>
+              <div id="login">
+                  <p>Authentication required</p>
+                  <input type="text" placeholder="Reg No" id="matric"><br> 
+                  <input type="password" placeholder="Password" id="password" ><br> 
+                  <input type="submit" value="Login"><br><br>  
+                 <button onClick="showReg()">Click here to register if you are new</button>
+            </div>
+
+
+  
+            <div id="regist" style="display:none">
+            	<p> Sign up Form</p>
+            	<input type="text" placeholder="First Name" id="first" maxlength="15"><br>
+                <input type="text" placeholder="Last Name" id="last" maxlength="15"><br>
+                <input type="text" placeholder="State Of Origin" id="state" maxlength="20"><br>
+                <input type="text" placeholder="Phone" id="phone" maxlength="11"><br>
+                <input type="text" placeholder="Department" id="dept" maxlength="20"><br>
+                <input type="text" placeholder="Reg No" id="matric2" maxlength="15"><br>
+                <input type="password" placeholder="Create Password" id="password2" maxlength="20"><br>
+                <select id="gender">
+                	<option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+
+
+
+   </select><br>
+                
+                <div id="error" style="color:red">
+                </div><br>
+                
+                <input type="submit" onClick="adds()" value="Sign Up">
+                <br><br>
+                <button onClick="closes()">Close</button>
+            </div>
+            
+       </div>
+
+
+	</div>
+</body>
+</html>
+
+<script>
+function showReg()
+{
+	document.getElementById("regist").style.display = "block";
+	document.getElementById("login").style.display = "none";
+}
+function closes()
+{
+	document.getElementById("regist").style.display = "none";
+	document.getElementById("login").style.display = "block";
+}
+</script>
+<script src="js/js.js"></script>
